@@ -21,6 +21,17 @@ function App() {
           />
         </div>
         <div className="input">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="input">
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
