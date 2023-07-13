@@ -3,8 +3,9 @@ import "./App.css";
 
 function App() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("")
   const [message, setMessage] = useState("");
-  console.log(name, message);
+  console.log(name, message, email);
   return (
     <div className="container">
       <form name="contact" method="POST">
@@ -27,8 +28,8 @@ function App() {
             id="email"
             name="email"
             placeholder="Your Email"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="input">
